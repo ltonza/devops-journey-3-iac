@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Config
+clusters:
+  - cluster:
+      certificate-authority-data: "< < REMOVIDO > >"
+      server: "< < REMOVIDO > >"
+    name: do-nyc1-k8s
+contexts:
+  - context:
+      cluster: do-nyc1-k8s
+      user: do-nyc1-k8s-admin
+    name: do-nyc1-k8s
+current-context: do-nyc1-k8s
+users:
+  - name: do-nyc1-k8s-admin
+    user:
+      token: "< < REMOVIDO > >"
